@@ -1,0 +1,490 @@
+/* Global */
+
+@font-face {
+  font-family: "COD";
+  src: url("./font/COD.otf");
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0px;
+  font-size: 2em;
+}
+
+/* Header all */
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  background: linear-gradient(to right, blue, white, red);
+  justify-content: center;
+  z-index: 1;
+}
+
+header ul {
+  display: flex;
+  padding: 0 0 0 0;
+}
+
+header li {
+  list-style-type: none;
+}
+
+header a {
+  font-size: 2rem;
+  color: rgb(20, 20, 20);
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* PAGE ACCUEIL */
+
+.bodyaccueil {
+  background: linear-gradient(black, grey, black);
+}
+
+.cod {
+  font-family: "COD";
+  text-align: center;
+}
+
+.mainaccueil {
+  color: rgb(234 225 225);
+  padding: 10px;
+}
+
+.videocod {
+  height: 700px;
+  position: relative;
+}
+
+.videotexte {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: rgb(80 4 4);
+}
+
+.videocod video {
+  height: 100%;
+  width: 100%;
+}
+
+.videocod h1 {
+  font-size: 1.5rem;
+  font-family: "COD";
+}
+
+/* PAGE ABOUT  */
+.bodyabout {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.bodyabout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./image/COD\ 3\ Arc\ de\ Triomphe\ Paris.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.about {
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+}
+
+.about {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(53 9 15);
+}
+
+.players {
+  color: black;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 8px #16ff26;
+  font-size: 4rem;
+}
+
+.coeur {
+  font-size: 4rem;
+  color: #f11414;
+}
+
+/* PAGE GAME */
+.gamehead {
+  text-align: center;
+  color: white;
+}
+
+.maingame {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bodygame {
+  background: linear-gradient(black, grey, rgb(241, 192, 55));
+  margin: 0;
+}
+
+.btnPopup {
+  align-items: center;
+  border-radius: 10px;
+  background-color: #5e61f5;
+  padding: 10px 10px 10px 10px;
+  font-size: 0.5em;
+  color: #f8f0f0;
+  cursor: pointer;
+}
+
+.btnPopup:hover {
+  background-color: rgb(255, 9, 9);
+}
+
+.overlay {
+  position: fixed;
+  left: 10%;
+  top: 30px;
+  width: 80%;
+  height: 80%;
+  display: none;
+}
+
+.popup {
+  margin: 30% auto;
+  width: auto;
+  height: auto;
+  background-color: #688075;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 20px #e81111;
+  padding: 2px;
+}
+
+.btnClose {
+  float: right;
+  cursor: pointer;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+#container #section-game {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.game-top {
+  display: flex;
+  align-items: center;
+}
+
+.game-top img,
+.game-top .game-top-text {
+  padding: 30px;
+}
+
+.game-top:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+/* PAGE CONTACT */
+
+.body-contact {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.body-contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./image/Millierjeuxvideos.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.contact {
+  text-align: center;
+  color: #2c2d2e;
+  font-family: "COD";
+}
+
+.title-contact {
+  color: #131313;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 20px #fed003;
+}
+.formulaire-contact {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 30px 30px 30px 30px;
+}
+
+form {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: solid 5px rgb(6, 6, 6);
+  border-radius: 10px 10px 10px 10px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 255, 0.341),
+    rgba(255, 255, 255, 0.495),
+    rgba(255, 0, 0, 0.374)
+  );
+  color: rgb(33, 29, 29);
+  padding: 20px 20px 20px 20px;
+}
+
+.nom input {
+  background: rgba(255, 255, 255, 0.466);
+  border-radius: 20px 20px 20px 20px;
+}
+
+.nom [name] {
+  border: rgb(19, 16, 232) solid 3px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.email input {
+  background: rgba(255, 255, 255, 0.466);
+}
+.email [type] {
+  border: rgb(248, 248, 251) solid 3px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.question textarea {
+  background: rgba(255, 255, 255, 0.466);
+  display: flex;
+  align-items: center;
+}
+
+.question [name] {
+  border: rgb(249, 7, 7) solid 3px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.button input {
+  height: 5em;
+  width: 20em;
+  border: solid 5px #ff0000c4;
+  border-radius: 20px 20px 20px 20px;
+  background: #0000ffab;
+  color: white;
+}
+
+aside h1 {
+  color: #fbf4f4;
+}
+
+.iframe-container {
+  text-align: center;
+}
+
+iframe {
+  display: block;
+  margin: 30px auto;
+}
+
+/* Footer all*/
+
+footer {
+  align-items: center;
+  display: flex;
+  background: linear-gradient(to right, blue, white, red);
+  justify-content: center;
+  font-size: 1rem;
+}
+
+footer ul {
+  display: flex;
+  padding: 0 0 0 0;
+  align-items: center;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer p {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+footer a {
+  padding-right: 10px;
+  color: rgb(20, 20, 20);
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+  .game-top {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .game-top:nth-child(odd) {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* * {
+    border: 1px solid rgb(243, 11, 11);
+  } */
+
+  /* barre de navigation */
+  header li {
+    display: flex;
+    justify-content: center;
+  }
+  header a {
+    font-size: 0.7rem;
+  }
+  /* Page d'accuiell */
+  .videotexte h1 {
+    text-align: center;
+  }
+
+  /* Page about */
+  .about h2 {
+    font-size: 1em;
+  }
+
+  .about img {
+    width: 200px;
+  }
+
+  .players {
+    font-size: 2rem;
+  }
+
+  /* Top 3 */
+
+  .game-top {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+
+  .game-top img {
+    width: 150px;
+    height: auto;
+  }
+
+  /* poppup top3 */
+
+  .overlay {
+    position: fixed;
+    left: 10%;
+    top: 30px;
+    width: 80%;
+    height: 80%;
+    font-size: 1rem;
+  }
+
+  /* Page contact */
+  form {
+    width: 70%;
+  }
+
+  .formulaire-contact ::placeholder {
+    text-align: center;
+    padding: 10px;
+  }
+
+  textarea ::placeholder {
+    text-align: center;
+  }
+
+  .formulaire-contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .formulaire-contact .nom,
+  .formulaire-contact .email,
+  .formulaire-contact .question,
+  .formulaire-contact .button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .formulaire-contact label {
+    font-size: 14px;
+  }
+
+  .formulaire-contact input[type="text"],
+  .formulaire-contact input[type="email"],
+  .formulaire-contact textarea {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  .formulaire-contact input[type="submit"] {
+    width: 50%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .iframe-container iframe {
+    display: flex;
+    width: 90%;
+    height: auto;
+  }
+
+  /* Conditions générales d’utilisation */
+
+  .cguheader {
+    display: flex;
+    text-align: center;
+  }
+
+  .h1cgu {
+    font-size: 2rem;
+  }
+
+  footer {
+    font-size: 0.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  footer li {
+    text-align: center;
+  }
+}
